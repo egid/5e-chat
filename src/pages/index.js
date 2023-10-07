@@ -17,25 +17,25 @@ const links = [
     text: "Adopt a cat (english)",
     url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSf996Yu15jDlm9M2aIkX2edYalGLyd7Rja17xFrJp85Z0ORhA/viewform?usp=send_form&pli=1",
     description:
-      "This pre-adoption form gets the process started!",
+      "Pre-adoption form",
   },
   {
     text: "Support Greek stray cats",
     url: "http://paypal.me/FifthCat",
     description:
-      "Donate with PayPal.",
+      "Contribute using PayPal",
   },
   {
-    text: "Contribute 1€ a month",
+    text: "Donate 1€ a month",
     url: "https://www.teaming.net/fifthcat",
     description:
-      "Donate with Teaming.",
+      "Contribute using Teaming",
   },
   {
     text: "Become a member",
     url: "https://www.helloasso.com/associations/le-cinquieme-chat-the-fifth-cat",
     description:
-      "Donate with helloasso.",
+      "Contribute using helloasso",
   },
 ]
 
