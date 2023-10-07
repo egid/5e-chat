@@ -9,10 +9,10 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `Le Cinquième Chat - The Fifth Cat`,
+    description: `Association de protection animale. Soutien aux chats grecs par des stérilisations, soins vété.`,
+    author: `@egid`,
+    siteUrl: `https://www.facebook.com/5eme.chat/`,
   },
   plugins: [
     `gatsby-plugin-image`,
