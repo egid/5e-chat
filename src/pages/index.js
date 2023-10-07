@@ -23,19 +23,19 @@ const links = [
     text: "Support Greek stray cats",
     url: "http://paypal.me/FifthCat",
     description:
-      "Contribute using PayPal",
+      "Contribute via PayPal",
   },
   {
     text: "Donate 1€ a month",
     url: "https://www.teaming.net/fifthcat",
     description:
-      "Contribute using Teaming",
+      "Contribute via Teaming",
   },
   {
     text: "Become a member",
     url: "https://www.helloasso.com/associations/le-cinquieme-chat-the-fifth-cat",
     description:
-      "Contribute using helloasso",
+      "Contribute via helloasso",
   },
 ]
 
