@@ -69,14 +69,16 @@ const IndexPage = () => (
       <StaticImage
         src="../images/logo.webp"
         loading="eager"
-        width={100}
+        width={200}
         quality={95}
         formats={["auto", "webp", "avif"]}
         alt=""
         style={{ marginBottom: `var(--space-3)` }}
       />
-      <h1>Le Cinquième Chat <br /> The Fifth Cat</h1>
-      <a href="https://www.facebook.com/5eme.chat">Facebook</a> | <a href="https://instagram.com/5th.cat">Instagram</a>
+      <h1 class="sr-only">Le Cinquième Chat - The Fifth Cat</h1>
+      <div class="textCenter">
+        <a href="https://www.facebook.com/5eme.chat">Facebook</a> | <a href="https://instagram.com/5th.cat">Instagram</a>
+      </div>
     </div>
     <ul className={styles.list}>
       {links.map(link => (
