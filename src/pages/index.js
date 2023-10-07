@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
@@ -8,93 +8,75 @@ import * as styles from "../components/index.module.css"
 
 const links = [
   {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial",
+    text: "Adoptez un chat (français)",
+    url: "https://docs.google.com/forms/d/e/1FAIpQLSfXLLTRlU5Iyet9byAqJs-2lh_Z8fTWTu_RcdCohvO7x0uy6Q/viewform?usp=send_form",
     description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
+      "Formulaire pré-adoption",
   },
   {
-    text: "Examples",
-    url: "https://github.com/gatsbyjs/gatsby/tree/master/examples",
+    text: "Adopt a cat (english)",
+    url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSf996Yu15jDlm9M2aIkX2edYalGLyd7Rja17xFrJp85Z0ORhA/viewform?usp=send_form&pli=1",
     description:
-      "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
+      "This pre-adoption form gets the process started!",
   },
   {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
+    text: "Support Greek stray cats",
+    url: "http://paypal.me/FifthCat",
     description:
-      "Learn how to add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
+      "Donate with PayPal.",
   },
   {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
+    text: "Contribute 1€ a month",
+    url: "https://www.teaming.net/fifthcat",
     description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
+      "Donate with Teaming.",
+  },
+  {
+    text: "Become a member",
+    url: "https://www.helloasso.com/associations/le-cinquieme-chat-the-fifth-cat",
+    description:
+      "Donate with helloasso.",
   },
 ]
 
-const samplePageLinks = [
-  {
-    text: "Page 2",
-    url: "page-2",
-    badge: false,
-    description:
-      "A simple example of linking to another page within a Gatsby site",
-  },
-  { text: "TypeScript", url: "using-typescript" },
-  { text: "Server Side Rendering", url: "using-ssr" },
-  { text: "Deferred Static Generation", url: "using-dsg" },
-]
+// const moreLinks = [
+//   { text: "Join us on Discord", url: "https://gatsby.dev/discord" },
+//   {
+//     text: "Documentation",
+//     url: "https://gatsbyjs.com/docs/",
+//   },
+//   {
+//     text: "Starters",
+//     url: "https://gatsbyjs.com/starters/",
+//   },
+//   {
+//     text: "Showcase",
+//     url: "https://gatsbyjs.com/showcase/",
+//   },
+//   {
+//     text: "Contributing",
+//     url: "https://www.gatsbyjs.com/contributing/",
+//   },
+//   { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
+// ]
 
-const moreLinks = [
-  { text: "Join us on Discord", url: "https://gatsby.dev/discord" },
-  {
-    text: "Documentation",
-    url: "https://gatsbyjs.com/docs/",
-  },
-  {
-    text: "Starters",
-    url: "https://gatsbyjs.com/starters/",
-  },
-  {
-    text: "Showcase",
-    url: "https://gatsbyjs.com/showcase/",
-  },
-  {
-    text: "Contributing",
-    url: "https://www.gatsbyjs.com/contributing/",
-  },
-  { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
-]
-
-const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
+// const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
+const utmParameters = ``
 
 const IndexPage = () => (
   <Layout>
     <div className={styles.textCenter}>
       <StaticImage
-        src="../images/example.png"
+        src="../images/logo.webp"
         loading="eager"
-        width={64}
+        width={100}
         quality={95}
         formats={["auto", "webp", "avif"]}
         alt=""
         style={{ marginBottom: `var(--space-3)` }}
       />
-      <h1>
-        Welcome to <b>Gatsby!</b>
-      </h1>
-      <p className={styles.intro}>
-        <b>Example pages:</b>{" "}
-        {samplePageLinks.map((link, i) => (
-          <React.Fragment key={link.url}>
-            <Link to={link.url}>{link.text}</Link>
-            {i !== samplePageLinks.length - 1 && <> · </>}
-          </React.Fragment>
-        ))}
-        <br />
-        Edit <code>src/pages/index.js</code> to update this page.
-      </p>
+      <h1>Le Cinquième Chat <br /> The Fifth Cat</h1>
+      <a href="https://www.facebook.com/5eme.chat">Facebook</a> | <a href="https://instagram.com/5th.cat">Instagram</a>
     </div>
     <ul className={styles.list}>
       {links.map(link => (
@@ -109,12 +91,12 @@ const IndexPage = () => (
         </li>
       ))}
     </ul>
-    {moreLinks.map((link, i) => (
+    {/* {moreLinks.map((link, i) => (
       <React.Fragment key={link.url}>
         <a href={`${link.url}${utmParameters}`}>{link.text}</a>
         {i !== moreLinks.length - 1 && <> · </>}
       </React.Fragment>
-    ))}
+    ))} */}
   </Layout>
 )
 
